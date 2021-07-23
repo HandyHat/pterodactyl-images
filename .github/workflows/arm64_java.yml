@@ -32,4 +32,4 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            ghcr.io/HandyHat/arm64:java_${{ matrix.tag }}
+            ghcr.io/handyhat/arm64:java_${{ matrix.tag }}
