@@ -1,9 +1,9 @@
 FROM        adoptopenjdk/openjdk8:debianslim-jre
 
-LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
+LABEL       author="HandyHat" maintainer="aniket@gargs.co.uk"
 
 RUN apt-get update -y \
- && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
+ && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 libjpeg-dev libpng-dev libtiff-dev libgif-dev webp \
  && useradd -d /home/container -m container
  
 USER container
